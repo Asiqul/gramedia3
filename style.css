@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&family=Raleway&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
 }
 
 .mini-top-header {
@@ -25,8 +32,33 @@
   padding: 8px;
 }
 
+.logo-wrapper {
+  place-self: center;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
 .navbar img {
   width: 180px;
+}
+
+.navbar-mini {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  z-index: 9999;
+  position: sticky;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+  box-shadow: 0 10px 7px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  padding: 0.7rem 0 0.7rem 0;
+}
+
+.auth-title {
+  color: #0060ae;
+  font-size: 2rem;
+  margin: 6rem 0 0 0;
+  font-weight: normal;
 }
 
 .navbar,
@@ -222,4 +254,189 @@ swiper-slide img {
 
 .submit-button:hover {
   background-color: #0056b3;
+}
+
+.auth-container {
+  width: 100%;
+}
+
+.forms-container {
+  margin: 2rem 0 0 0;
+}
+
+.forms-wrapper {
+  border-bottom: 1px;
+}
+
+.forms-wrapper input {
+  padding: 0.4rem;
+}
+
+.forms-wrapper div input {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999999;
+}
+
+.forms-wrapper div {
+  margin: 1.3rem 0 1.3rem 0;
+}
+
+.forms-wrapper div label {
+  font-size: 1.1rem;
+  top: 13px;
+  left: 0;
+  color: #999999;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.auth-button__wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+}
+
+.auth-button {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+  border: none;
+  color: #0060ae;
+  border-radius: 5px;
+}
+
+.auth-button:hover {
+  background-color: #0060ae;
+  color: white;
+}
+
+.auth-checkbox {
+  color: #0060ae;
+  margin: 3rem 0.5rem;
+  font-size: small;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.auth-checkbox input {
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+  .logo {
+    max-height: 50%;
+    max-width: 70%;
+  }
+  .mini-top-header {
+    display: none;
+  }
+
+  swiper-slide img {
+    max-width: 100%;
+    max-height: 13rem;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .container {
+    width: 85%;
+    margin: auto;
+  }
+  .logo {
+    max-height: 50%;
+    max-width: 70%;
+  }
+  .auth-container {
+    margin: auto;
+    width: 95%;
+  }
+
+  swiper-slide img {
+    max-width: 100%;
+    max-height: 16rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 79%;
+    margin: auto;
+  }
+  .logo {
+    max-height: 60%;
+    max-width: 80%;
+  }
+  .auth-container {
+    margin: auto;
+    width: 87%;
+  }
+
+  swiper-slide img {
+    max-width: 100%;
+    max-height: 18rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    width: 79%;
+    margin: auto;
+  }
+  .auth-container {
+    margin: auto;
+    width: 70%;
+  }
+
+  swiper-slide img {
+    max-width: 100%;
+    max-height: 21rem;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .auth-container {
+    margin: auto;
+    width: 65%;
+  }
+
+  swiper-slide img {
+    max-width: 100%;
+    max-height: 23rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .auth-container {
+    margin: auto;
+    width: 55%;
+  }
+
+  swiper-slide img {
+    max-width: 100%;
+    max-height: 26rem;
+  }
 }
