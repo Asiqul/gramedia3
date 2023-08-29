@@ -12,6 +12,13 @@ body {
   min-height: 100vh;
 }
 
+a,
+a:active,
+a:visited {
+  color: #0060ae;
+  text-decoration: none;
+}
+
 .mini-top-header {
   align-items: center;
   gap: 5px;
